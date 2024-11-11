@@ -37,19 +37,29 @@ a{
     font-family: "Poppins", sans-serif;
     font-weight: 500;
 }
+a:link{
+    color:red;
+}
+a:hover{
+    color:#FFC700;
+}
+a:active{
+    color:green;
+}
 .nav-icons{
     display: flex;
     gap:3rem;
     cursor: pointer;   
 }
+
 /* mini-nav section starts here */
 .mini-nav{
     background-color: #F9F1E7;
     padding: 1.5rem 10rem 1.5rem 10rem;
-}
-.mini-nav{
     display: flex;
     gap: 2rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
 }
 .homespan a{
     color: #00000080;
@@ -59,19 +69,14 @@ a{
     font-family: "Poppins", sans-serif;
     font-weight: 800;
     font-size: 1rem;
-    align-items: center;
-    
-}
-hr{
-    height: 1.5rem;
-    border: none;
-    background-color: #000000;
-    width: 1px;
+    text-align: center;  
 }
 .mini-nav p{
-    font-family: "Poppins", sans-serif;
     padding-top: 0.2rem;
 }
+
+
+
 /* Asgard section starts here */
 .asgard{
     padding:2rem 9rem;
@@ -80,6 +85,9 @@ hr{
     width: 100%;
     border: none;
     border-bottom:1px solid #D9D9D9;
+}
+.main-img{
+    height: 30rem;
 }
 .asgard-img{
     display: flex;
@@ -101,17 +109,17 @@ hr{
 }
 .asgard h3{
     font-family: "Poppins", sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 300;
 }
 .asgard p{
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    color:#9F9F9F;   
+    color:#9F9F9F; 
 }
 .ratings{
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     color: #FFC700;
     display: flex;
     align-items: center;
@@ -128,7 +136,7 @@ hr{
     font-size: 0.5rem;
 }
 .asgard-word {
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     font-family: "Poppins", sans-serif;
     font-size: 0.5rem;
     padding-right: 10rem;  
@@ -138,14 +146,14 @@ hr{
     color: #000000 !important;
 }
 .asgard-size{
-    padding-top: 1rem;
+    padding-top: 1.5rem;
 }
 .asgard-size p{
     font-family: "Poppins", sans-serif;
     font-size: 0.6rem;
 }
 .sizes{
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     display: flex;
     gap: 1rem;
 }
@@ -153,10 +161,11 @@ hr{
     color: #000000;
     background-color: #F9F1E7;
     width: 2rem;
+    height: 2rem;
     border-radius: 0.3rem;
     display: flex;
     padding: 0.7rem;
-    justify-items: center;
+    text-align:center;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
 }
@@ -166,7 +175,7 @@ hr{
 
 }
 .color{
-    padding-top: 1rem;
+    padding-top: 2rem;
     display: flex;
     gap:1rem;
 }
@@ -188,7 +197,10 @@ hr{
     width: 1.5rem;
     border-radius: 50%;
 }
-.cart{
+.carts{
+    padding-top: 2rem;
+    display: flex;
+    gap: 0.5rem;
 
 }
 .cart1{
@@ -197,12 +209,58 @@ hr{
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    border:  #9F9F9F 2px solid;
+    border:  #9F9F9F 1.5px solid;
     border-radius:0.2rem;
     align-items: center;
-    width: 5rem;
-    padding: auto;
-    background-color: red;
+    width: 4rem;
+    height: 2rem;   
+}
+.cart1 p{
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 0.7rem;
+    font-weight: 600;
+}
+.cart2{
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border:  #9F9F9F 1.5px solid;
+    border-radius:0.5rem;
+    align-items: center;
+    width: 7rem;
+    height: 2rem;
+}
+.cart2 p{
+    color: #000000;
+    padding-bottom: 0.7rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+.asgard-social{
+    margin-top: 3rem;
+    padding-top:2rem;
+    border: none;
+    border-top: 1px solid #D9D9D9;
+}
+.category{
+    display: flex;
+    gap: 2.5rem;
+}
+.category1{
+    display: flex;
+    gap: 1.5rem;
+}
+.share{
+    display: flex;
+    gap: 2.5rem;
+}
+.fa-brands{
+    color: #000000;
+    padding-right:0.5rem;
+    
 }
 
 /* description section starts here */
@@ -236,7 +294,8 @@ hr{
 .desc-word p{
     color: #9F9F9F;
     font-size: 1rem;
-    padding-top: 1rem;
+    padding-top: 2rem;
+    font-family: "Poppins", sans-serif;
 }
 .desc-img{
     padding:3rem 0 0 10rem;
@@ -303,7 +362,6 @@ font-weight: 600;
     color:  #898989;
     font-weight: 500;
     padding-top: 0.3rem;
-
 }
 .strike-text{
     display:flex;
@@ -342,7 +400,7 @@ font-weight: 600;
     overflow: hidden;
 }
 /* button animation */
-span{
+.anime{
     background: #B88E2F ;
     height: 100%;
     width: 0;
@@ -455,5 +513,88 @@ button:hover{
     border: none;
     border-top: 1px solid #00000010;
 }
+
+/* footer section starts here */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top:5rem;
+    padding: 2rem 5rem 0 5rem;
+    border: none;
+    border-top: 1px solid #0000002B
+    
+}
+.sec1 h4{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.sec1 p{
+    padding-top:2rem;
+    color: #9F9F9F;
+    font-family: "Poppins", sans-serif;
+    padding-right: 5rem;
+    font-size: 0.8rem;
+
+}
+.list-header{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #9F9F9F;
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+
+}
+.list{
+    padding-top: 2rem;
+    color: #000000;
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+
+}
+.news-button{
+    padding-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+.news-button input[type="email"]{
+    border: none;
+    border-bottom: 2px solid #00000080;
+    background-color:transparent;
+    outline: none;
+}
+.news-button input::placeholder{
+   font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+}
+.news-button input:focus::placeholder{
+    color: transparent;
+}
+.news-button button{
+    border: none;
+    border-bottom: 2px solid #00000080;
+    background-color:transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8rem;
+
+    
+}
+.news-button button:hover{
+    color: #000000;
+}
+.copy{
+    margin: 1rem 5rem 0 5rem;
+    font-family: "Poppins", sans-serif;
+    padding:2rem 0 1rem 0;
+    font-size: 0.6rem;
+    font-weight: 500;
+    border: none;
+    border-top: 1px solid #00000010;
+}
+
+
 
 

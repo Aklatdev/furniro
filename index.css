@@ -37,6 +37,15 @@ a{
     font-family: "Poppins", sans-serif;
     font-weight: 500;
 }
+a:link{
+    color:red;
+}
+a:hover{
+    color:#FFC700;
+}
+a:active{
+    color: green;
+}
 .nav-icons{
     display: flex;
     gap:3rem;
@@ -91,7 +100,13 @@ a{
     cursor: pointer;
 }
 .background-text button:hover{
-    background-color: #2EC1AC;
+    /* background-color: #2D551B;
+    border-radius: 0.3rem; */
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid;
+    color:#B88E2F;
+    border-radius: 0.5rem;
 }
 /* browse the range section starts here */
 .browse{
@@ -312,7 +327,7 @@ button:hover{
     cursor: pointer;
 }
 .beautiful-button:hover{
-    background-color: #2EC1AC;
+    background-color: ;
     width: 50%;
 }
 
